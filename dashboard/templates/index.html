@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Neura Control Panel</title>
+    <meta http-equiv="refresh" content="5">
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #fff; text-align: center; padding: 20px; }
+        .box { display: inline-block; background: #1e1e1e; padding: 20px; margin: 10px; border-radius: 8px; min-width: 150px; border-top: 4px solid #00d2ff; }
+        .log { background: #2b2d31; max-width: 600px; margin: 20px auto; padding: 20px; border-radius: 8px; text-align: left; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body>
+    <h1>🤖 NEURA BOT DASHBOARD</h1>
+    <div>
+        <div class="box"><h3>⚔️ Hunt</h3><p style="font-size:2rem;margin:0;">{{ data.total_hunts }}</p></div>
+        <div class="box"><h3>🛡️ Battle</h3><p style="font-size:2rem;margin:0;">{{ data.total_battles }}</p></div>
+        <div class="box" style="border-top-color:#ff4757"><h3>🚨 Captcha</h3><p style="font-size:2rem;margin:0;color:#ff4757">{{ data.captcha_count }}</p></div>
+    </div>
+    <div class="log">
+        <h3 style="color:#f1c40f;margin-top:0;">📝 Trận đấu mới nhất:</h3>
+        <p>{{ formatted_log | safe }}</p>
+        {% if data.last_log_image %}<img src="{{ data.last_log_image }}" style="max-width:100%;border-radius:6px;margin-top:10px;">{% endif %}
+    </div>
+</body>
+</html>
