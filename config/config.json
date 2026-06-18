@@ -1,0 +1,16 @@
+{
+  "token": "TOKEN_DISCORD_CỦA_BẠN",
+  "webhook_url": "LINK_WEBHOOK_BÁO_ĐỘNG_CỦA_BẠN",
+  "my_main_id": "ID_ACC_CHÍNH_CỦA_BẠN",
+  "farm_channels": [
+    "ID_KÊNH_FARM_1",
+    "ID_KÊNH_FARM_2"
+  ],
+  "reply_answers": [
+    "sao thế bạn?",
+    "gì á?",
+    "đợi tí nha đang bận tí",
+    "kêu chi thế ông?"
+  ]
+}
+
